@@ -59,7 +59,7 @@ git config --global url."https://github.com/".insteadOf git@github.com:
 ## 4. 安装 OpenClaw（用户态）
 
 ```bash
-curl -fsSL https://openclaw.ai/install-cli.sh | bash
+curl -fsSL --proto '=https' --tlsv1.2 https://openclaw.ai/install-cli.sh | bash -s -- --version 2026.2.19-2
 ```
 
 安装完成后，必须把 CLI 写入 PATH（永久）：
